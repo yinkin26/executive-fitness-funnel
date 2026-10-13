@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Executive Metabolic Protocol™ | High-Performance Fitness for Founders</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        display: ['"Space Grotesk"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            accent: '#f97316', // Energetic orange for high conversion CTA
+                            dark: '#090d16',
+                            card: '#111827',
+                            border: '#1f2937'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .gradient-text {
+            background: linear-gradient(135deg, #ffffff 30%, #93c5fd 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .orange-gradient-text {
+            background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .glow {
+            box-shadow: 0 0 50px -10px rgba(59, 130, 246, 0.25);
+        }
+        .cta-glow {
+            box-shadow: 0 0 35px -5px rgba(249, 115, 22, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-brand-dark text-slate-200 antialiased selection:bg-brand-500 selection:text-white">
+
+    <!-- TOP URGENCY BANNER -->
+    <div class="bg-gradient-to-r from-blue-900 via-indigo-900 to-slate-900 border-b border-blue-800/40 py-2.5 px-4 text-center text-xs md:text-sm font-medium tracking-wide">
+        <span class="inline-flex items-center gap-1.5 text-orange-400 font-semibold">
+            <i data-lucide="zap" class="w-4 h-4"></i> Q4 Executive Intake:
+        </span>
+        <span class="text-slate-300 ml-1">Only 3 of 10 Bespoke Coaching Spots Remaining for this Cohort.</span>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-40 bg-brand-dark/85 backdrop-blur-md border-b border-brand-border/60">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-brand-600 to-orange-500 flex items-center justify-center font-bold text-white text-lg font-display shadow-md">
+                    Ω
+                </div>
+                <div>
+                    <span class="font-display font-bold text-lg tracking-tight text-white">APEX<span class="text-brand-accent">METABOLIC</span></span>
+                    <span class="hidden sm:inline-block text-[10px] text-slate-400 uppercase tracking-widest ml-1 font-semibold">Executive Protocol</span>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <div class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-400">
+                    <a href="#problem" class="hover:text-white transition-colors">The Dilemma</a>
+                    <a href="#method" class="hover:text-white transition-colors">Our Protocol</a>
+                    <a href="#results" class="hover:text-white transition-colors">Case Studies</a>
+                </div>
+                <button onclick="openModal()" class="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-brand-accent hover:bg-orange-600 text-white font-semibold text-xs sm:text-sm shadow-md transition-all hover:scale-[1.02] active:scale-[0.98]">
+                    <span>Apply for Intake</span>
+                    <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-12 pb-20 md:pt-20 md:pb-32 overflow-hidden">
+        <!-- Subtle Background Glows -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[350px] bg-blue-600/10 blur-[130px] rounded-full pointer-events-none"></div>
+        <div class="absolute top-1/3 right-10 w-[300px] h-[300px] bg-orange-500/10 blur-[120px] rounded-full pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-blue-950/70 border border-blue-500/30 text-blue-300 text-xs font-semibold mb-6 shadow-inner">
+                <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                THE PROVEN SCIENCE FOR 60+ HOUR WORKWEEKS
+            </div>
+
+            <!-- Main Headline -->
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold font-display tracking-tight leading-[1.12] mb-6 gradient-text">
+                Drop 15–25 lbs of Stubborn Belly Fat in 90 Days — <span class="orange-gradient-text">Without Starving or Living in the Gym.</span>
+            </h1>
+
+            <!-- Subheadline -->
+            <p class="max-w-3xl mx-auto text-base sm:text-lg md:text-xl text-slate-300 leading-relaxed mb-10 font-normal">
+                A custom, bio-calibrated metabolic system engineered specifically for founders, C-suite executives, and high-performing professionals. <span class="text-white font-semibold underline decoration-brand-accent underline-offset-4">3 sessions a week. Zero cardio marathons. Eat real food.</span>
+            </p>
+
+            <!-- CTA Button Container -->
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
+                <button onclick="openModal()" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white font-bold text-base sm:text-lg shadow-xl cta-glow flex items-center justify-center gap-3 transition-all hover:scale-[1.02] active:scale-[0.98]">
+                    <span>Book Your Free 15-Min Blueprint Call</span>
+                    <i data-lucide="calendar" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <!-- Micro-copy reassurance -->
+            <div class="flex flex-wrap items-center justify-center gap-y-2 gap-x-6 text-xs text-slate-400">
+                <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-400"></i> No sales pressure</span>
+                <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-400"></i> Personalized metabolic breakdown</span>
+                <span class="flex items-center gap-1.5"><i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-emerald-400"></i> 100% Confidential</span>
+            </div>
+
+            <!-- Social Proof Bar -->
+            <div class="mt-14 pt-8 border-t border-brand-border/60 flex flex-wrap items-center justify-center gap-8 md:gap-16">
+                <div class="flex items-center gap-3">
+                    <div class="flex -space-x-2">
+                        <img class="w-10 h-10 rounded-full border-2 border-brand-dark object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&h=100&fit=crop" alt="User">
+                        <img class="w-10 h-10 rounded-full border-2 border-brand-dark object-cover" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop" alt="User">
+                        <img class="w-10 h-10 rounded-full border-2 border-brand-dark object-cover" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop" alt="User">
+                        <img class="w-10 h-10 rounded-full border-2 border-brand-dark object-cover" src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?w=100&h=100&fit=crop" alt="User">
+                    </div>
+                    <div class="text-left">
+                        <div class="flex text-amber-400">
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                            <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
+                        </div>
+                        <p class="text-xs text-slate-300 font-medium"><strong>142+</strong> Executives Transformed</p>
+                    </div>
+                </div>
+
+                <div class="h-8 w-px bg-slate-800 hidden md:block"></div>
+
+                <div class="flex items-center gap-6 text-slate-400 font-display font-semibold text-sm tracking-wider uppercase opacity-80">
+                    <span>FORBES</span>
+                    <span>TECHCRUNCH</span>
+                    <span>BLOOMBERG</span>
+                    <span>INC. 5000</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY STATS SECTION -->
+    <section class="py-10 bg-brand-card/50 border-y border-brand-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="p-4">
+                    <p class="text-3xl md:text-4xl font-extrabold text-white font-display mb-1">98.4%</p>
+                    <p class="text-xs md:text-sm text-slate-400">Client Success Rate</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-3xl md:text-4xl font-extrabold text-brand-accent font-display mb-1">-21.5 lbs</p>
+                    <p class="text-xs md:text-sm text-slate-400">Avg. 90-Day Fat Loss</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-3xl md:text-4xl font-extrabold text-white font-display mb-1">3x / Wk</p>
+                    <p class="text-xs md:text-sm text-slate-400">35-Min Workouts Only</p>
+                </div>
+                <div class="p-4">
+                    <p class="text-3xl md:text-4xl font-extrabold text-emerald-400 font-display mb-1">100%</p>
+                    <p class="text-xs md:text-sm text-slate-400">Guaranteed Results</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE PROBLEM / WHY OTHERS FAIL -->
+    <section id="problem" class="py-20 md:py-28 relative">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <p class="text-orange-500 font-semibold text-xs md:text-sm uppercase tracking-widest mb-2 font-display">The Hidden Trap</p>
+                <h2 class="text-2xl sm:text-4xl font-bold font-display text-white mb-4">
+                    Why Traditional Fitness Programs Fail High-Income Founders Every Single Time
+                </h2>
+                <p class="text-slate-400 text-sm md:text-base">
+                    Most gym trainers have 22-year-old metabolisms and no kids or board meetings. Their "advice" actually sabotages your testosterone and metabolic rate.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Pain Card 1 -->
+                <div class="p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-red-950/60 border border-red-500/30 flex items-center justify-center text-red-400 mb-5">
+                        <i data-lucide="flame" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 font-display">1. The "Cardio Hamster Wheel"</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Running 5 miles on a treadmill increases cortisol, destroys lean muscle tissue, and makes you ravenous by 9 PM, leading to late-night binge eating.
+                    </p>
+                </div>
+
+                <!-- Pain Card 2 -->
+                <div class="p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-red-950/60 border border-red-500/30 flex items-center justify-center text-red-400 mb-5">
+                        <i data-lucide="utensils" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 font-display">2. Zero-Carb Starvation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Cutting carbs ruins your deep sleep, clouds your executive decision-making, and guarantees you rebound with 10 extra pounds the moment you have a business dinner.
+                    </p>
+                </div>
+
+                <!-- Pain Card 3 -->
+                <div class="p-6 rounded-2xl bg-brand-card border border-brand-border hover:border-slate-700 transition-all">
+                    <div class="w-12 h-12 rounded-xl bg-red-950/60 border border-red-500/30 flex items-center justify-center text-red-400 mb-5">
+                        <i data-lucide="clock" class="w-6 h-6"></i>
+                    </div>
+                    <h3 class="text-lg font-bold text-white mb-2 font-display">3. 2-Hour Daily Gym Sessions</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        You run a company. You don't have 12 hours a week to waste commuting to the gym and resting between sets. You need hyper-efficient minimum effective doses.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE UNIQUE MECHANISM / THE 3-PILLAR PROTOCOL -->
+    <section id="method" class="py-20 bg-slate-900/60 border-t border-brand-border">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="px-3 py-1 rounded-full bg-blue-900/40 border border-blue-500/30 text-blue-400 text-xs font-semibold uppercase tracking-wider mb-3 inline-block">The Solution</span>
+                <h2 class="text-2xl sm:text-4xl font-bold font-display text-white mb-4">
+                    The 3-Pillar Executive Metabolic Protocol™
+                </h2>
+                <p class="text-slate-400 text-sm md:text-base">
+                    Engineered to fit into your calendar seamlessly, whether you're traveling across time zones or closing Series B funding.
+                </p>
+            </div>
+
+            <div class="space-y-8">
+                <!-- Pillar 1 -->
+                <div class="p-6 md:p-8 rounded-2xl bg-brand-card border border-brand-border flex flex-col md:flex-row items-start md:items-center gap-6">
+                    <div class="w-14 h-14 rounded-2xl bg-blue-600/20 border border-blue-500/30 flex items-center justify-center text-blue-400 font-display font-bold text-2xl shrink-0">
+                        01
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-white mb-2 font-display">Metabolic Rate Restoration & Strategic Nutrition</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            No rigid tupperware meals. We design an executive dining protocol that allows you to eat steak, drink social wine at client dinners, and keep carbohydrates strategically timed for cognitive sharpness and fat burning.
+                        </p>
+                    </div>
+                    <div class="shrink-0 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-950/40 border border-emerald-500/20 flex items-center gap-1">
+                        <i data-lucide="check" class="w-4 h-4"></i> No Calorie Counting
+                    </div>
+                </div>
+
+                <!-- Pillar 2 -->
+                <div class="p-6 md:p-8 rounded-2xl bg-brand-card border border-brand-border flex flex-col md:flex-row items-start md:items-center gap-6">
+                    <div class="w-14 h-14 rounded-2xl bg-orange-600/20 border border-orange-500/30 flex items-center justify-center text-orange-400 font-display font-bold text-2xl shrink-0">
+                        02
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-white mb-2 font-display">Minimum-Effective-Dose Hypertrophy (35 Mins / 3x Wk)</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            Science-backed compound stimulation. We trigger maximum testosterone and growth hormone output in 35 focused minutes. Can be executed in a high-end gym or right in your hotel suite.
+                        </p>
+                    </div>
+                    <div class="shrink-0 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-950/40 border border-emerald-500/20 flex items-center gap-1">
+                        <i data-lucide="check" class="w-4 h-4"></i> Travel-Proof
+                    </div>
+                </div>
+
+                <!-- Pillar 3 -->
+                <div class="p-6 md:p-8 rounded-2xl bg-brand-card border border-brand-border flex flex-col md:flex-row items-start md:items-center gap-6">
+                    <div class="w-14 h-14 rounded-2xl bg-purple-600/20 border border-purple-500/30 flex items-center justify-center text-purple-400 font-display font-bold text-2xl shrink-0">
+                        03
+                    </div>
+                    <div class="flex-1">
+                        <h3 class="text-xl font-bold text-white mb-2 font-display">Deep Sleep Optimization & Daily 1-on-1 Concierge</h3>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            You get direct WhatsApp access to your dedicated exercise physiologist. Oura Ring & Whoop data synchronization to ensure your nervous system recovers 100% every single night.
+                        </p>
+                    </div>
+                    <div class="shrink-0 text-emerald-400 text-xs font-semibold px-3 py-1.5 rounded-lg bg-emerald-950/40 border border-emerald-500/20 flex items-center gap-1">
+                        <i data-lucide="check" class="w-4 h-4"></i> VIP Daily Accountability
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CASE STUDIES / TESTIMONIALS -->
+    <section id="results" class="py-20 md:py-28">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-orange-500 font-semibold text-xs md:text-sm uppercase tracking-widest font-display">Proven Case Studies</span>
+                <h2 class="text-2xl sm:text-4xl font-bold font-display text-white mt-1 mb-4">
+                    Real Executives. Real Boardrooms. Real Transformations.
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="p-6 sm:p-8 rounded-2xl bg-brand-card border border-brand-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-slate-200 text-sm sm:text-base leading-relaxed italic mb-6">
+                            "I run a 45-person B2B software company. I was drinking 5 cups of coffee a day and had a 38-inch waist. In 90 days, I dropped from 215 lbs to 189 lbs, my energy stays steady until 9 PM, and I never missed a family dinner."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-brand-border">
+                        <img class="w-12 h-12 rounded-full object-cover border border-slate-700" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop" alt="Client">
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Marcus Vance</h4>
+                            <p class="text-slate-400 text-xs">CEO & Founder, ScaleMetrics (Austin, TX)</p>
+                            <span class="inline-block mt-1 text-[11px] font-bold text-orange-400">-26 lbs Fat Loss</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="p-6 sm:p-8 rounded-2xl bg-brand-card border border-brand-border flex flex-col justify-between">
+                    <div>
+                        <div class="flex text-amber-400 mb-4">
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+                        </div>
+                        <p class="text-slate-200 text-sm sm:text-base leading-relaxed italic mb-6">
+                            "The single best investment I've made in myself. What shocked me was the lack of friction: workouts were only 35 minutes, and I actually ate more than I used to. My blood pressure dropped back to normal ranges in 6 weeks."
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-4 pt-4 border-t border-brand-border">
+                        <img class="w-12 h-12 rounded-full object-cover border border-slate-700" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&h=150&fit=crop" alt="Client">
+                        <div>
+                            <h4 class="text-white font-semibold text-sm">Sarah Jenkins</h4>
+                            <p class="text-slate-400 text-xs">Managing Partner, Apex Venture Group</p>
+                            <span class="inline-block mt-1 text-[11px] font-bold text-orange-400">-19 lbs & 8% Body Fat</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- THE GUARANTEE -->
+    <section class="py-16 bg-blue-950/20 border-y border-blue-900/40">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+            <div class="w-16 h-16 rounded-2xl bg-blue-600/20 border border-blue-500/40 flex items-center justify-center text-blue-400 mx-auto mb-6">
+                <i data-lucide="shield-check" class="w-8 h-8"></i>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-bold font-display text-white mb-4">
+                Our 100% "In-Your-Corner" Ironclad Guarantee
+            </h2>
+            <p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-6">
+                If you follow the Apex Metabolic Protocol for 90 days and do not lose at least 15 pounds of pure body fat, we will continue coaching you 1-on-1 for <strong class="text-white">FREE</strong> until you hit your target weight. Zero excuses. We take all the financial risk.
+            </p>
+        </div>
+    </section>
+
+    <!-- FINAL CTA SECTION -->
+    <section class="py-20 md:py-28 relative">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center relative z-10">
+            <h2 class="text-3xl sm:text-5xl font-bold font-display text-white mb-6">
+                Ready to Reclaim Your Peak Energy & Sharpest Physique?
+            </h2>
+            <p class="text-slate-300 text-base sm:text-lg mb-10 max-w-2xl mx-auto">
+                Schedule your complimentary 15-minute diagnostic call. We'll audit your current schedule, identify your metabolic bottlenecks, and map out your custom roadmap.
+            </p>
+
+            <button onclick="openModal()" class="px-10 py-5 rounded-xl bg-brand-accent hover:bg-orange-600 text-white font-bold text-lg sm:text-xl shadow-2xl cta-glow inline-flex items-center gap-3 transition-all hover:scale-105 active:scale-95">
+                <span>Claim Your 15-Min Blueprint Call</span>
+                <i data-lucide="arrow-right" class="w-6 h-6"></i>
+            </button>
+            <p class="text-xs text-slate-400 mt-4">100% Free Strategy Session • No Pushy Tactics • Limited Weekly Spots</p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-10 border-t border-brand-border text-center text-xs text-slate-400">
+        <p>© 2026 Apex Metabolic Protocol. All rights reserved.</p>
+        <p class="mt-2 text-slate-400">Designed & Engineered with High-Converting AI Funnel Architecture.</p>
+    </footer>
+
+    <!-- INTERACTIVE LEAD QUALIFICATION & BOOKING MODAL -->
+    <div id="bookingModal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-sm hidden items-center justify-center p-4">
+        <div class="bg-brand-card border border-brand-border rounded-2xl max-w-lg w-full p-6 sm:p-8 relative shadow-2xl">
+            <!-- Close Button -->
+            <button onclick="closeModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
+                <i data-lucide="x" class="w-5 h-5"></i>
+            </button>
+
+            <!-- Quiz Step 1 -->
+            <div id="step1" class="space-y-4">
+                <div class="flex items-center justify-between text-xs font-semibold text-brand-accent uppercase tracking-wider mb-2">
+                    <span>Step 1 of 3</span>
+                    <span>Qualification</span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-white">What is your primary physical goal right now?</h3>
+                <p class="text-xs text-slate-400">Select the option that best reflects your target outcome:</p>
+                <div class="space-y-2.5 pt-2">
+                    <button onclick="nextStep(2)" class="w-full p-3.5 rounded-xl bg-slate-800/80 hover:bg-brand-600 text-left text-sm font-medium text-white transition-all flex items-center justify-between border border-slate-700 hover:border-blue-400">
+                        <span>🔥 Drop 15-30 lbs of stubborn fat</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                    <button onclick="nextStep(2)" class="w-full p-3.5 rounded-xl bg-slate-800/80 hover:bg-brand-600 text-left text-sm font-medium text-white transition-all flex items-center justify-between border border-slate-700 hover:border-blue-400">
+                        <span>⚡ Boost daily focus & all-day energy</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                    <button onclick="nextStep(2)" class="w-full p-3.5 rounded-xl bg-slate-800/80 hover:bg-brand-600 text-left text-sm font-medium text-white transition-all flex items-center justify-between border border-slate-700 hover:border-blue-400">
+                        <span>💪 Build lean muscle & optimize hormones</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quiz Step 2 -->
+            <div id="step2" class="space-y-4 hidden">
+                <div class="flex items-center justify-between text-xs font-semibold text-brand-accent uppercase tracking-wider mb-2">
+                    <span>Step 2 of 3</span>
+                    <span>Schedule & Capacity</span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-white">How many hours a week do you work?</h3>
+                <div class="space-y-2.5 pt-2">
+                    <button onclick="nextStep(3)" class="w-full p-3.5 rounded-xl bg-slate-800/80 hover:bg-brand-600 text-left text-sm font-medium text-white transition-all flex items-center justify-between border border-slate-700 hover:border-blue-400">
+                        <span>40 – 50 hours (Standard full-time)</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                    <button onclick="nextStep(3)" class="w-full p-3.5 rounded-xl bg-slate-800/80 hover:bg-brand-600 text-left text-sm font-medium text-white transition-all flex items-center justify-between border border-slate-700 hover:border-blue-400">
+                        <span>50 – 70 hours (High workload / Executive)</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                    <button onclick="nextStep(3)" class="w-full p-3.5 rounded-xl bg-slate-800/80 hover:bg-brand-600 text-left text-sm font-medium text-white transition-all flex items-center justify-between border border-slate-700 hover:border-blue-400">
+                        <span>70+ hours (Founder / Intensive scaling)</span>
+                        <i data-lucide="chevron-right" class="w-4 h-4"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Quiz Step 3 / Calendar Simulation -->
+            <div id="step3" class="space-y-4 hidden">
+                <div class="flex items-center justify-between text-xs font-semibold text-emerald-400 uppercase tracking-wider mb-2">
+                    <span>🎉 Qualified</span>
+                    <span>Pick Your Time</span>
+                </div>
+                <h3 class="text-xl font-bold font-display text-white">Select a 15-Minute Slot on the Executive Calendar</h3>
+                <p class="text-xs text-slate-400">Direct 1-on-1 strategy call with our Lead Physiologist:</p>
+
+                <div class="grid grid-cols-2 gap-2 pt-2">
+                    <button onclick="confirmBooking('Tomorrow @ 10:00 AM EST')" class="p-3 rounded-lg bg-slate-800 hover:bg-orange-500 text-center text-xs font-semibold text-white border border-slate-700 hover:border-orange-400 transition-colors">
+                        Tomorrow @ 10:00 AM EST
+                    </button>
+                    <button onclick="confirmBooking('Tomorrow @ 2:30 PM EST')" class="p-3 rounded-lg bg-slate-800 hover:bg-orange-500 text-center text-xs font-semibold text-white border border-slate-700 hover:border-orange-400 transition-colors">
+                        Tomorrow @ 2:30 PM EST
+                    </button>
+                    <button onclick="confirmBooking('Thursday @ 11:00 AM EST')" class="p-3 rounded-lg bg-slate-800 hover:bg-orange-500 text-center text-xs font-semibold text-white border border-slate-700 hover:border-orange-400 transition-colors">
+                        Thursday @ 11:00 AM EST
+                    </button>
+                    <button onclick="confirmBooking('Thursday @ 4:00 PM EST')" class="p-3 rounded-lg bg-slate-800 hover:bg-orange-500 text-center text-xs font-semibold text-white border border-slate-700 hover:border-orange-400 transition-colors">
+                        Thursday @ 4:00 PM EST
+                    </button>
+                </div>
+            </div>
+
+            <!-- Step 4 / Success Confirmation -->
+            <div id="step4" class="text-center py-6 space-y-4 hidden">
+                <div class="w-14 h-14 rounded-full bg-emerald-500/20 border border-emerald-500 text-emerald-400 flex items-center justify-center mx-auto">
+                    <i data-lucide="check" class="w-8 h-8"></i>
+                </div>
+                <h3 class="text-2xl font-bold font-display text-white">Strategy Call Confirmed!</h3>
+                <p id="bookingDetails" class="text-sm text-slate-300">A calendar invite and preparation guide have been sent to your inbox.</p>
+                <button onclick="closeModal()" class="px-6 py-2.5 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-semibold text-sm transition-colors">
+                    Done
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- SCRIPT FOR MODAL & ICONS -->
+    <script>
+        lucide.createIcons();
+
+        function openModal() {
+            document.getElementById('bookingModal').classList.remove('hidden');
+            document.getElementById('bookingModal').classList.add('flex');
+            resetQuiz();
+        }
+
+        function closeModal() {
+            document.getElementById('bookingModal').classList.add('hidden');
+            document.getElementById('bookingModal').classList.remove('flex');
+        }
+
+        function nextStep(stepNum) {
+            document.getElementById('step1').classList.add('hidden');
+            document.getElementById('step2').classList.add('hidden');
+            document.getElementById('step3').classList.add('hidden');
+            document.getElementById('step' + stepNum).classList.remove('hidden');
+        }
+
+        function confirmBooking(timeSlot) {
+            document.getElementById('step3').classList.add('hidden');
+            document.getElementById('step4').classList.remove('hidden');
+            document.getElementById('bookingDetails').innerText = 'Confirmed for: ' + timeSlot + '. Google Meet link has been generated.';
+        }
+
+        function resetQuiz() {
+            document.getElementById('step1').classList.remove('hidden');
+            document.getElementById('step2').classList.add('hidden');
+            document.getElementById('step3').classList.add('hidden');
+            document.getElementById('step4').classList.add('hidden');
+        }
+    </script>
+</body>
+</html>
